@@ -1,0 +1,72 @@
+@import "../global.scss";
+
+.main {
+  height: 30rem;
+  position: relative;
+  width: 23rem;
+  margin: 2rem;
+  @include displayFlexCenter;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  img {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  h2 {
+    color: rgb(68, 68, 68);
+    letter-spacing: 2px;
+  }
+
+  h3 {
+    margin-top: -2rem;
+    display: flex;
+    font-weight: 900;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(91, 64, 196);
+  }
+
+  ul {
+    width: 80%;
+    text-align: center;
+    list-style: none;
+    margin-top: -2rem;
+
+    li {
+      &:first-child {
+        border-top: 1px solid rgb(154, 152, 152);
+      }
+      margin: 0.7rem 0;
+      padding: 0.5rem;
+      color: rgb(55, 55, 55);
+      margin-left: -2.3rem;
+      width: 110%;
+      border-bottom: 1px solid rgb(154, 152, 152);
+    }
+    @media only screen and (max-width: 600px) {
+      li {
+        margin-left: -4rem;
+      }
+    }
+    @media only screen and (max-width: 400) {
+      li {
+        margin-left: -7rem;
+      }
+    }
+  }
+  .button {
+    position: absolute;
+    bottom: -13px;
+  }
+}
+
+@media only screen and (max-width: 400) {
+  .main {
+    .button {
+      background-color: black;
+    }
+  }
+}

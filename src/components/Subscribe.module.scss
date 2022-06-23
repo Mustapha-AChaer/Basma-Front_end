@@ -1,0 +1,25 @@
+@import "../global.scss";
+
+.main {
+  height: 27rem;
+  background-image: url("../assets/images/newsletter-background.png");
+  background-size: cover;
+  background-position: 0%;
+  @include displayFlexCenter;
+  flex-direction: column;
+  margin: 2rem;
+
+  .input {
+    width: 35rem;
+  }
+
+  .button {
+    width: 35rem;
+    margin: 1rem 0;
+    background-color: rgb(71, 34, 164);
+    text-transform: capitalize;
+    &:hover {
+      background-color: rgb(54, 24, 131);
+    }
+  }
+}

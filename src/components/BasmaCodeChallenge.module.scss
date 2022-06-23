@@ -1,0 +1,28 @@
+@import "../global.scss";
+
+.main {
+  height: 50rem;
+  @include displayFlexCenter;
+  flex-direction: column;
+
+  h4 {
+    color: rgb(75, 75, 75);
+    width: 45rem;
+    text-align: center;
+  }
+
+  .cards {
+    @include displayFlexCenter;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  h5 {
+    span {
+      text-decoration: underline;
+    }
+  }
+}

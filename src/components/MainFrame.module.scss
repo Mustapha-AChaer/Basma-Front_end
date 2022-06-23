@@ -1,0 +1,94 @@
+@import "../global.scss";
+
+.mainframe {
+  position: relative;
+  margin: 2rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.mainframe::before {
+  background: linear-gradient(
+    90deg,
+    rgba(71, 0, 216, 1) 70%,
+    rgba(153, 0, 240, 1) 100%
+  );
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(44% 0, 100% 0, 100% 35%, 71% 64%);
+}
+@media only screen and (max-width: 1024px) {
+  .mainframe::before {
+    clip-path: none;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .mainframe {
+    height: 65rem;
+  }
+}
+
+.nav {
+  flex: 3;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 1.3rem;
+    justify-content: flex-end;
+    padding: 0 2rem;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    li {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.info {
+  flex: 7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .title {
+    flex: 1;
+
+    &:nth-child(n) {
+      padding-left: 9rem;
+    }
+  }
+  .image {
+    flex: 1;
+  }
+
+  img {
+    height: 45rem;
+    width: 30rem;
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .info {
+    flex: 14;
+  }
+}

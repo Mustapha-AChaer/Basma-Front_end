@@ -1,0 +1,89 @@
+@import "../global.scss";
+
+.main {
+  height: 47rem;
+  background-color: white;
+  margin: 2rem;
+  @include displayFlexCenter;
+  flex-direction: column;
+
+  h3 {
+    width: 55rem;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(108, 104, 104);
+  }
+
+  .infoForm {
+    @include displayFlexCenter;
+    flex-direction: row;
+    margin: 1rem 0;
+
+    .info {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      h3 {
+        width: 30rem;
+        text-align: left;
+        margin-left: 4.9rem;
+      }
+
+      ul {
+        list-style: none;
+        @include displayFlexCenter;
+        justify-content: flex-start;
+        align-items: baseline;
+        flex-direction: column;
+        li {
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+          margin: 1rem 0;
+          .icon {
+            color: white;
+            background-color: rgba(153, 0, 240, 1);
+            padding: 0.5rem;
+            margin: 0 1rem;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 2px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          }
+        }
+      }
+    }
+
+    .form {
+      flex: 1;
+
+      .inputField {
+        margin: 0.7rem 0;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .button {
+        width: 100%;
+        height: 4rem;
+        color: white;
+        background-color: rgba(153, 0, 240, 1);
+
+        &:hover {
+          background-color: rgb(106, 0, 168);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main {
+    height: 65rem;
+  }
+  .info {
+    h3 {
+      margin-left: 9rem;
+    }
+  }
+}

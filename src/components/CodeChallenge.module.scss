@@ -1,0 +1,21 @@
+@import "../global.scss";
+
+.mainCodeChallenge {
+  margin: 2rem;
+  height: 60rem;
+  @include displayFlexCenter;
+  flex-direction: column;
+
+  p {
+    padding: 1rem 20rem;
+    text-align: center;
+  }
+
+  .challenges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

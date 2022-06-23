@@ -1,0 +1,31 @@
+@import "../global.scss";
+
+.main {
+  height: 27.5rem;
+  margin: 3rem;
+  background: linear-gradient(rgba(14, 22, 92, 0.7), rgba(14, 22, 92, 0.7)),
+    url("../assets/images/download-bg.jpeg");
+  flex-direction: column;
+  background-size: cover;
+  @include displayFlexCenter;
+  background-position: 0%;
+
+  h3 {
+    text-align: center;
+    width: 60rem;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .images {
+    @include displayFlexCenter;
+    flex-direction: row;
+
+    img {
+      height: 4rem;
+      width: 12rem;
+      margin: 0 1rem;
+    }
+  }
+  //   background-blend-mode: darken(10%);
+}

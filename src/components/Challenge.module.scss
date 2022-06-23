@@ -1,0 +1,23 @@
+@import "../global.scss";
+
+.main {
+  height: 19rem;
+  width: 27%;
+  @include displayFlexCenter;
+  flex-direction: column;
+  overflow: hidden;
+
+  .icon {
+    color: grey;
+    font-size: 5rem;
+  }
+  img {
+    height: 5rem;
+    width: 5rem;
+  }
+  h4 {
+    font-size: 1rem;
+    color: rgb(88, 88, 88);
+    text-align: center;
+  }
+}

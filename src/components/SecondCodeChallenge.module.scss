@@ -1,0 +1,32 @@
+@import "../global.scss";
+
+.main {
+  @include displayFlexCenter;
+  flex-direction: column;
+  height: 47rem;
+  margin: 3rem;
+  background: linear-gradient(
+    90deg,
+    rgba(71, 0, 216, 1) 36%,
+    rgba(153, 0, 240, 1) 100%
+  );
+
+  h4 {
+    color: white;
+    width: 55rem;
+    text-align: center;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    .icon {
+      color: white;
+      font-size: 3rem;
+    }
+  }
+}
